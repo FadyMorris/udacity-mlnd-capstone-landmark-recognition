@@ -1,4 +1,4 @@
-![Udacity Logo](./docs/img/udacity_logo.svg)
+![Udacity Logo](./docs/img/udacity-logo.svg)
 
 # Udacity Machine Learning Engineer Nanodegree Capstone Project
 ## Landmark Recognition
@@ -11,7 +11,13 @@ Convolutional neural networks are now capable of outperforming humans on some co
 such as classifying images.  
 In this project, I provide a solution to the Landmark Recognition Problem. Given an input photo of a place anywhere around the world, the computer can recognize and label the landmark in which this image was taken.
 
-# Libraries Used :
+# Udacity Nanodegree Program Graduate Certificate
+**Credential ID:** 57A56H32  
+**Certificate Link :** [https://graduation.udacity.com/confirm/57A56H32](https://graduation.udacity.com/confirm/57A56H32)  
+(Certificate earned at Monday, December 15, 2019)  
+![Certificate](https://s3-us-west-2.amazonaws.com/udacity-printer/production/certificates/a010e1e1-a8f5-43e3-a352-5898b7ad1ef0.svg)
+
+# Libraries Used
 - [Python 3.x](https://www.python.org)
 - [NumPy](https://numpy.org/)
 - [Pandas](https://pandas.pydata.org/)
@@ -19,7 +25,7 @@ In this project, I provide a solution to the Landmark Recognition Problem. Given
 - [Keras](https://keras.io)
 
 
-# Directory Structure :
+# Directory Structure
 
   
 - [src/](./src/) : Contains the project source code. Jupyter notebooks, Python scripts, and exported HTML files of the project Jupyter notebooks.  
