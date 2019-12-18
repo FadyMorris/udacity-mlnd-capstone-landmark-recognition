@@ -13083,7 +13083,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -13099,7 +13099,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">os</span>
@@ -13113,7 +13113,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Pretty display for notebooks</span>
@@ -13127,16 +13127,17 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Data paths definitions :</span>
 <span class="n">data_dir</span> <span class="o">=</span> <span class="s2">&quot;../data&quot;</span>
+<span class="n">data_processed_dir</span> <span class="o">=</span> <span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">data_dir</span><span class="p">,</span> <span class="s2">&quot;processed&quot;</span><span class="p">)</span> <span class="c1">#downloaded and processed dataset</span>
+<span class="n">input_csv_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">data_dir</span><span class="p">,</span><span class="s2">&quot;raw&quot;</span><span class="p">)</span> <span class="c1">#csv files that were dowlnoaded from kagggle</span>
+<span class="n">train_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">data_processed_dir</span><span class="p">,</span> <span class="s2">&quot;train&quot;</span><span class="p">)</span> <span class="c1">##Training images directory</span>
+<span class="n">validation_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">data_processed_dir</span><span class="p">,</span> <span class="s2">&quot;validation&quot;</span><span class="p">)</span> <span class="c1">##Validation images directory</span>
+<span class="n">test_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">data_processed_dir</span><span class="p">,</span> <span class="s2">&quot;test&quot;</span><span class="p">)</span> <span class="c1">##Validation images directory</span>
 <span class="n">stats_dir</span> <span class="o">=</span> <span class="s2">&quot;../docs/stats&quot;</span>
-<span class="n">input_csv_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">data_dir</span><span class="p">,</span><span class="s2">&quot;input_csv&quot;</span><span class="p">)</span> <span class="c1">#csv files that were dowlnoaded from kagggle</span>
-<span class="n">train_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">data_dir</span><span class="p">,</span> <span class="s2">&quot;train&quot;</span><span class="p">)</span> <span class="c1">##Training images directory</span>
-<span class="n">validation_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">data_dir</span><span class="p">,</span> <span class="s2">&quot;validation&quot;</span><span class="p">)</span> <span class="c1">##Validation images directory</span>
-<span class="n">test_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">data_dir</span><span class="p">,</span> <span class="s2">&quot;test&quot;</span><span class="p">)</span> <span class="c1">##Validation images directory</span>
 </pre></div>
 
     </div>
@@ -13178,7 +13179,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Load file</span>
@@ -13214,7 +13215,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Display a description of the file</span>
@@ -13260,27 +13261,27 @@ div#notebook {
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
+      <td>0</td>
       <td>0</td>
       <td>http://commons.wikimedia.org/wiki/Category:Hap...</td>
     </tr>
     <tr>
-      <th>1</th>
+      <td>1</td>
       <td>1</td>
       <td>http://commons.wikimedia.org/wiki/Category:Lui...</td>
     </tr>
     <tr>
-      <th>2</th>
+      <td>2</td>
       <td>2</td>
       <td>http://commons.wikimedia.org/wiki/Category:Gra...</td>
     </tr>
     <tr>
-      <th>3</th>
+      <td>3</td>
       <td>3</td>
       <td>http://commons.wikimedia.org/wiki/Category:Twe...</td>
     </tr>
     <tr>
-      <th>4</th>
+      <td>4</td>
       <td>4</td>
       <td>http://commons.wikimedia.org/wiki/Category:San...</td>
     </tr>
@@ -13327,7 +13328,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Load file</span>
@@ -13363,7 +13364,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Display a top rows of the file</span>
@@ -13410,31 +13411,31 @@ div#notebook {
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
+      <td>0</td>
       <td>6e158a47eb2ca3f6</td>
       <td>https://upload.wikimedia.org/wikipedia/commons...</td>
       <td>142820</td>
     </tr>
     <tr>
-      <th>1</th>
+      <td>1</td>
       <td>202cd79556f30760</td>
       <td>http://upload.wikimedia.org/wikipedia/commons/...</td>
       <td>104169</td>
     </tr>
     <tr>
-      <th>2</th>
+      <td>2</td>
       <td>3ad87684c99c06e1</td>
       <td>http://upload.wikimedia.org/wikipedia/commons/...</td>
       <td>37914</td>
     </tr>
     <tr>
-      <th>3</th>
+      <td>3</td>
       <td>e7f70e9c61e66af3</td>
       <td>https://upload.wikimedia.org/wikipedia/commons...</td>
       <td>102140</td>
     </tr>
     <tr>
-      <th>4</th>
+      <td>4</td>
       <td>4072182eddd0100e</td>
       <td>https://upload.wikimedia.org/wikipedia/commons...</td>
       <td>2474</td>
@@ -13474,7 +13475,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">top_train_data</span> <span class="o">=</span> <span class="n">train_data</span><span class="p">[</span><span class="s1">&#39;landmark_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">to_frame</span><span class="p">()</span><span class="o">.</span><span class="n">nlargest</span><span class="p">(</span><span class="mi">60</span><span class="p">,</span> <span class="s1">&#39;landmark_id&#39;</span><span class="p">)</span>
@@ -13488,7 +13489,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">top_train_data</span><span class="p">[</span><span class="mi">33</span><span class="p">:</span><span class="mi">55</span><span class="p">])</span>
@@ -13532,91 +13533,91 @@ div#notebook {
   </thead>
   <tbody>
     <tr>
-      <th>149980</th>
+      <td>149980</td>
       <td>1108</td>
     </tr>
     <tr>
-      <th>46500</th>
+      <td>46500</td>
       <td>1107</td>
     </tr>
     <tr>
-      <th>14915</th>
+      <td>14915</td>
       <td>1093</td>
     </tr>
     <tr>
-      <th>120734</th>
+      <td>120734</td>
       <td>1093</td>
     </tr>
     <tr>
-      <th>33992</th>
+      <td>33992</td>
       <td>1088</td>
     </tr>
     <tr>
-      <th>40088</th>
+      <td>40088</td>
       <td>1056</td>
     </tr>
     <tr>
-      <th>164773</th>
+      <td>164773</td>
       <td>1048</td>
     </tr>
     <tr>
-      <th>171683</th>
+      <td>171683</td>
       <td>1047</td>
     </tr>
     <tr>
-      <th>176018</th>
+      <td>176018</td>
       <td>1045</td>
     </tr>
     <tr>
-      <th>168098</th>
+      <td>168098</td>
       <td>1037</td>
     </tr>
     <tr>
-      <th>20120</th>
+      <td>20120</td>
       <td>1032</td>
     </tr>
     <tr>
-      <th>165900</th>
+      <td>165900</td>
       <td>1027</td>
     </tr>
     <tr>
-      <th>25093</th>
+      <td>25093</td>
       <td>1017</td>
     </tr>
     <tr>
-      <th>136093</th>
+      <td>136093</td>
       <td>1000</td>
     </tr>
     <tr>
-      <th>187779</th>
+      <td>187779</td>
       <td>986</td>
     </tr>
     <tr>
-      <th>9070</th>
+      <td>9070</td>
       <td>978</td>
     </tr>
     <tr>
-      <th>127516</th>
+      <td>127516</td>
       <td>976</td>
     </tr>
     <tr>
-      <th>56827</th>
+      <td>56827</td>
       <td>975</td>
     </tr>
     <tr>
-      <th>105337</th>
+      <td>105337</td>
       <td>968</td>
     </tr>
     <tr>
-      <th>147897</th>
+      <td>147897</td>
       <td>961</td>
     </tr>
     <tr>
-      <th>180759</th>
+      <td>180759</td>
       <td>947</td>
     </tr>
     <tr>
-      <th>165596</th>
+      <td>165596</td>
       <td>946</td>
     </tr>
   </tbody>
@@ -13647,7 +13648,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#selected_labels_indices = top_train_data[&#39;landmark_id&#39;][40:50].keys()</span>
@@ -13701,61 +13702,61 @@ div#notebook {
   </thead>
   <tbody>
     <tr>
-      <th>1</th>
+      <td>1</td>
       <td>40088</td>
       <td>Masada</td>
       <td>1056</td>
     </tr>
     <tr>
-      <th>2</th>
+      <td>2</td>
       <td>164773</td>
       <td>Dead_Sea</td>
       <td>1048</td>
     </tr>
     <tr>
-      <th>3</th>
+      <td>3</td>
       <td>176018</td>
       <td>Hayravank_monastery</td>
       <td>1045</td>
     </tr>
     <tr>
-      <th>4</th>
+      <td>4</td>
       <td>168098</td>
       <td>Golden_Gate_Bridge</td>
       <td>1037</td>
     </tr>
     <tr>
-      <th>5</th>
+      <td>5</td>
       <td>165900</td>
       <td>Mount_Arapiles</td>
       <td>1027</td>
     </tr>
     <tr>
-      <th>6</th>
+      <td>6</td>
       <td>25093</td>
       <td>Matka_Canyon</td>
       <td>1017</td>
     </tr>
     <tr>
-      <th>7</th>
+      <td>7</td>
       <td>9070</td>
       <td>Feroz_Shah_Kotla</td>
       <td>978</td>
     </tr>
     <tr>
-      <th>8</th>
+      <td>8</td>
       <td>127516</td>
       <td>Burrator</td>
       <td>976</td>
     </tr>
     <tr>
-      <th>9</th>
+      <td>9</td>
       <td>56827</td>
       <td>Kazan</td>
       <td>975</td>
     </tr>
     <tr>
-      <th>10</th>
+      <td>10</td>
       <td>147897</td>
       <td>Kasteel_Amerongen</td>
       <td>961</td>
@@ -13780,7 +13781,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">selected_labels_subset</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">stats_dir</span><span class="p">,</span> <span class="s2">&quot;selected_labels_subset.csv&quot;</span><span class="p">))</span> <span class="c1">#save selected labels subset to csv</span>
@@ -13815,7 +13816,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">train_data_subset</span> <span class="o">=</span> <span class="n">train_data</span><span class="p">[</span><span class="n">train_data</span><span class="p">[</span><span class="s1">&#39;landmark_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">selected_labels_subset</span><span class="p">[</span><span class="s1">&#39;landmark_id&#39;</span><span class="p">])]</span>
@@ -13828,10 +13829,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">train_data_subset</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">train_data_subset</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13844,11 +13845,11 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[15]:</div>
+    <div class="prompt"></div>
 
 
 
-<div class="output_html rendered_html output_subarea output_execute_result">
+<div class="output_html rendered_html output_subarea ">
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -13874,67 +13875,67 @@ div#notebook {
   </thead>
   <tbody>
     <tr>
-      <th>349</th>
+      <td>349</td>
       <td>9c19ee11f0902178</td>
       <td>https://upload.wikimedia.org/wikipedia/commons...</td>
       <td>165900</td>
     </tr>
     <tr>
-      <th>922</th>
+      <td>922</td>
       <td>37b2522f3895b2f9</td>
       <td>https://upload.wikimedia.org/wikipedia/commons...</td>
       <td>176018</td>
     </tr>
     <tr>
-      <th>1244</th>
+      <td>1244</td>
       <td>bba39914defa5ca0</td>
       <td>https://upload.wikimedia.org/wikipedia/commons...</td>
       <td>127516</td>
     </tr>
     <tr>
-      <th>2013</th>
+      <td>2013</td>
       <td>7a12b3cc85fb8410</td>
       <td>https://upload.wikimedia.org/wikipedia/commons...</td>
       <td>164773</td>
     </tr>
     <tr>
-      <th>2236</th>
+      <td>2236</td>
       <td>208406f06dd0b2fc</td>
       <td>https://upload.wikimedia.org/wikipedia/commons...</td>
       <td>164773</td>
     </tr>
     <tr>
-      <th>...</th>
+      <td>...</td>
       <td>...</td>
       <td>...</td>
       <td>...</td>
     </tr>
     <tr>
-      <th>4131020</th>
+      <td>4131020</td>
       <td>41821760967e8625</td>
       <td>https://upload.wikimedia.org/wikipedia/commons...</td>
       <td>165900</td>
     </tr>
     <tr>
-      <th>4131367</th>
+      <td>4131367</td>
       <td>22023ea9d00371a0</td>
       <td>https://upload.wikimedia.org/wikipedia/commons...</td>
       <td>168098</td>
     </tr>
     <tr>
-      <th>4131585</th>
+      <td>4131585</td>
       <td>f0e41092bce16658</td>
       <td>https://upload.wikimedia.org/wikipedia/commons...</td>
       <td>165900</td>
     </tr>
     <tr>
-      <th>4131864</th>
+      <td>4131864</td>
       <td>fc17525a42d608fa</td>
       <td>https://upload.wikimedia.org/wikipedia/commons...</td>
       <td>56827</td>
     </tr>
     <tr>
-      <th>4132698</th>
+      <td>4132698</td>
       <td>799cec839b656df3</td>
       <td>http://upload.wikimedia.org/wikipedia/commons/...</td>
       <td>25093</td>
@@ -13968,7 +13969,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="k">import</span> <span class="n">train_test_split</span>
@@ -14853,7 +14854,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">train</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">data_dir</span><span class="p">,</span> <span class="s2">&quot;index_train.csv&quot;</span><span class="p">),</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="c1">#save training data subset to csv</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">train</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">data_processed_dir</span><span class="p">,</span> <span class="s2">&quot;index_train.csv&quot;</span><span class="p">),</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="c1">#save training data subset to csv</span>
 </pre></div>
 
     </div>
@@ -14866,7 +14867,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">test</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">data_dir</span><span class="p">,</span> <span class="s2">&quot;index_test.csv&quot;</span><span class="p">),</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="c1">#save training data subset to csv</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">test</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">data_processed_dir</span><span class="p">,</span> <span class="s2">&quot;index_test.csv&quot;</span><span class="p">),</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="c1">#save training data subset to csv</span>
 </pre></div>
 
     </div>
@@ -14879,7 +14880,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">validation</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">data_dir</span><span class="p">,</span> <span class="s2">&quot;index_validation.csv&quot;</span><span class="p">),</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="c1">#save training data subset to csv</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">validation</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">data_processed_dir</span><span class="p">,</span> <span class="s2">&quot;index_validation.csv&quot;</span><span class="p">),</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="c1">#save training data subset to csv</span>
 </pre></div>
 
     </div>
@@ -14932,12 +14933,12 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">load_ext</span> autoreload
 <span class="o">%</span><span class="k">autoreload</span> 2
-
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;../src&#39;</span><span class="p">)</span>
 <span class="kn">from</span> <span class="nn">image_downloader</span> <span class="k">import</span> <span class="o">*</span> <span class="c1">#import custom script to download images</span>
 <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">clear_output</span>
 </pre></div>

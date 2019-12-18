@@ -1,6 +1,7 @@
 ![Udacity Logo](./docs/img/udacity-logo.svg)
 
-# Udacity Machine Learning Engineer Nanodegree Capstone Project
+# Machine Learning Engineer Nanodegree 
+## Capstone Project
 ## Landmark Recognition
 
 > ### Fady Morris Milad Ebeid  
@@ -28,41 +29,60 @@ In this project, I provide a solution to the Landmark Recognition Problem. Given
 # Directory Structure
 
   
-- [src/](./src/) : Contains the project source code. Jupyter notebooks, Python scripts, and exported HTML files of the project Jupyter notebooks.  
+- [notebooks/](./notebooks/) : Contains the project Jupyter notebooks and exported HTML files of the project notebooks.  
+- [src/](./src/) : Contains python helper scripts.
 - [docs/](./docs/) : Contains the project [report](./docs/report.pdf) and [proposal](./docs/proposal.pdf).  
    
    
 **Full project directory structure :**
 ```
-.
+<project root directory>
 ├── README.md                                            - Project readme file.
-├── src/
+├── notebooks/
 │   ├── data_exploration_and_preprocessing.ipynb         - Code for dataset download and preprocessing.
-│   ├── image_downloader.py                              - Python helper script to download images.
 │   └── Udacity_MLND_capstone_landmark-recognition.ipynb - Project implementation.
+├── src/
+│   └── image_downloader.py                              - Python helper script to download images.
 ├── docs/                     - Project documentation directory.
 │   ├── proposal.pdf          - Project proposal.
 │   ├── report.pdf            - Project report.
 │   ├── figures/              - Project output plots and graphs.
-│   ├── stats/                - Project output statistics, metrics, and dataset summary.
-│   └── img/                  - Project logos. 
-├── data/                     - Project dataset.
-│   ├── index_train.csv       
-│   ├── index_validation.csv
-│   ├── index_test.csv
-│   ├── test/
-│   ├── train/
-│   ├── validation/
-│   └── input_csv/            - CSV from Google Landmarks dataset.
-│       ├── train.csv
-│       └── train_label_to_category.csv
-│
+│   ├── img/                  - Project logos and other images. 
+│   └── stats/                - Project output statistics, metrics, and dataset summary.
+├── data/                           
+│   ├── processed/                       - Project downloaded and processed dataset.
+│   │   ├── index_train.csv
+│   │   ├── index_validation.csv
+│   │   ├── index_test.csv
+│   │   ├── train/
+│   │   ├── validation/
+│   │   └── test/
+│   ├── raw/                             - Raw Google Landmarks dataset CSV files.
+│   │   ├── train.csv
+│   │   └── train_label_to_category.csv
+│   └── test_images/                     - Unseen test images downloaded from the web.
+│       └── files/
 └── models/     - Project saved training best weights, training history and bottleneck features
 ```
 
 
 
 
-# Data Preparation and Structure
+# Project Directory and Data Preparation
 
-The prepared data for this project can be downloaded from this [Google Drive link](https://drive.google.com/open?id=1k9zJ23fMfEBk1XzAsRYAJQjK9cpYSQTr). Download the dataset file `data.tar.gz` and extract it to the project root directory. This is a subset dataset that was extracted from from Common Visual Data Foundation [Google Landmarks Dataset v2](https://github.com/cvdfoundation/google-landmark). 
+- Clone the repository :
+
+        git clone https://github.com/FadyMorris/udacity-mlnd-capstone-landmark-recognition.git
+
+- Download the processed dataset archive `data_processed.tar.gz` from this [Google Drive link](https://drive.google.com/open?id=1k9zJ23fMfEBk1XzAsRYAJQjK9cpYSQTr), then extract it to the project root directory.  
+This is a subset dataset that was extracted from Common Visual Data Foundation [Google Landmarks Dataset v2](https://github.com/cvdfoundation/google-landmark).
+- (Optional): You can download the output from previous run of the model,`models.tar.gz` and `stats.tar.gz` from [Google Drive link](https://drive.google.com/open?id=1k9zJ23fMfEBk1XzAsRYAJQjK9cpYSQTr) and extract them to the project root directory.  
+If you don't download these files, run the following commands to create the output directories:
+
+        cd udacity-mlnd-capstone-landmark-recognition
+        mkdir models
+        mkdir -p docs/figures
+        mkdir -p docs/stats
+        
+- (Optional): If you want to run [data_exploration_and_preprocessing notebook](./notebooks/data_exploration_and_preprocessing.ipynb) to create your own dataset, download [train.csv](https://s3.amazonaws.com/google-landmark/metadata/train.csv) and [train_label_to_category.csv](https://s3.amazonaws.com/google-landmark/metadata/train_label_to_category.csv) and place them inside `data/raw/` directory. These are raw index files from Common Visual Data Foundation [Google Landmarks Dataset v2](https://github.com/cvdfoundation/google-landmark).
+- Download your test images and place them inside `data/test_images/files/` directory.
