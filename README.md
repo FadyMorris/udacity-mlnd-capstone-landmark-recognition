@@ -18,10 +18,14 @@ In this project, I provide a solution to the Landmark Recognition Problem. Given
 (Certificate earned at Monday, December 15, 2019)  
 ![Certificate](https://s3-us-west-2.amazonaws.com/udacity-printer/production/certificates/a010e1e1-a8f5-43e3-a352-5898b7ad1ef0.svg)
 
+# Documentation
+For the full documentation, refer to [project report](./docs/report.pdf).
+
 # Libraries Used
 - [Python 3.x](https://www.python.org)
 - [NumPy](https://numpy.org/)
 - [Pandas](https://pandas.pydata.org/)
+- [Matplotlib](https://matplotlib.org/)
 - [Tensorflow](https://www.tensorflow.org)
 - [Keras](https://keras.io)
 
