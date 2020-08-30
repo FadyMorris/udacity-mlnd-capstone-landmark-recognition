@@ -12,6 +12,8 @@ Convolutional neural networks are now capable of outperforming humans on some co
 such as classifying images.  
 In this project, I provide a solution to the Landmark Recognition Problem. Given an input photo of a place anywhere around the world, the computer can recognize and label the landmark in which this image was taken.
 
+![Predicted Images](/../master/docs/img/visualization_predicted_images.png?raw=true "Identifying Landmarks from Images")
+
 # Udacity Nanodegree Program Graduate Certificate
 **Credential ID:** 57A56H32  
 **Certificate Link :** [https://graduation.udacity.com/confirm/57A56H32](https://graduation.udacity.com/confirm/57A56H32)  
